@@ -1,7 +1,7 @@
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
-    font-size: 41px;
+    font-size: 40px;
     color: #49516F;
 }
 
@@ -23,7 +23,7 @@ body{
 form{
     position: relative;
     display: flex;
-    margin-bottom: 32px;
+
 } 
 
 .prompt{
@@ -47,12 +47,22 @@ form{
     background-color: #fc79a0; 
     cursor: pointer;
 }
+
+.hint{
+    font-size: 12px;
+    margin: 0 15px 36px 5px;
+    color: #49516f93;
+}
 .poem{
     font-size: 16px;
     line-height: 1.5;
     background-color: #F0F0F0;
     padding: 16px;
     border-left:2px solid #FF477E;
+}
+
+.poem.hidden{
+    display: none;
 }
 
 footer{
