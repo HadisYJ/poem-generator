@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <title>AI Poem Generator</title>
 </head>
 <body>
@@ -12,20 +14,15 @@
         <h1> AI Poem Generator</h1>
     </header>
     <main>
-        <form >
-            <input type="text" class="prompt" placeholder="Enter the topic of the poem..." required autocomplete="off">
+        <form id="poem-generator-form">
+            <input type="text" class="prompt" placeholder="Enter the topic of the poem..." required autocomplete="off" id="user-instruction">
             <button class="submit-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                   </svg>
             </button>
         </form>
-        <div class="poem">
-            peom wil live here
-            <br>
-            peom wil live here
-            <br>
-            peom wil live here
+        <div class="poem" id="poem"> 
         </div>
 
     </main>
